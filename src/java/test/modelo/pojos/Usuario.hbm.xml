@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 21/07/2015 09:22:10 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="test.modelo.entidad.Usuario" table="usuario" catalog="testprueba" optimistic-lock="version">
+        <id name="id" type="string">
+            <column name="id" length="30" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombres" type="string">
+            <column name="nombres" length="50" />
+        </property>
+        <property name="nacimiento" type="string">
+            <column name="nacimiento" length="45" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="30" />
+        </property>
+        <property name="genero" type="string">
+            <column name="genero" length="10" />
+        </property>
+        <property name="fecha" type="timestamp">
+            <column name="fecha" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>
