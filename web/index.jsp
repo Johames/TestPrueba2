@@ -28,7 +28,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-4"></div>
                 <div class="col-xs-12 col-sm-4 col-md-4 well">
-                    <h3 id="status"></h3>
+                    <h4 id="status"></h4>
                     <button type="button" class="btn btn-primary" onclick="FBBtnLogin()">Iniciar sesión</button>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4"></div>

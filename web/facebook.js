@@ -108,10 +108,11 @@ function getStateFromUser(){
             id = response.id;
             // genero del usuario
             gender = response.gender;
-     
+            // primer nombre
+            first_name = response.first_name;
 
      // Incluimos un mensaje y la imagen del usuario
-     imagen.innerHTML = "<img src='//graph.facebook.com/"+id+"/picture?type=large'>";
+     imagen.innerHTML = "<img src='//graph.facebook.com/"+id+"/picture?type=small'>";
      status.innerHTML = "Bienvenido "+name;
      nombre.value = name;
      correo.value = email;

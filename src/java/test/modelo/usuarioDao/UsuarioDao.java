@@ -13,4 +13,5 @@ import test.modelo.entidad.Usuario;
  */
 public interface UsuarioDao {
     public boolean AgregarUsuario(Usuario usuario);
+    public boolean updateusuario(Usuario usuario);
 }

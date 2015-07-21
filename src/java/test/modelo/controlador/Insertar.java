@@ -45,14 +45,15 @@ public class Insertar extends HttpServlet {
             switch(action){
                 case "insertar":
                     usuario.setNombres(nombres);
-                usuario.setId(id);
-                usuario.setNacimiento(nacimiento);
-                usuario.setEmail(email);
-                usuario.setGenero(genero);
+                    usuario.setId(id);
+                    usuario.setNacimiento(nacimiento);
+                    usuario.setEmail(email);
+                    usuario.setGenero(genero);
                 
                 if(dao.AgregarUsuario(usuario)){
                     request.getRequestDispatcher("test.jsp").forward(request, response);
                 }else{
+                    dao.updateusuario(usuario);
                     request.getRequestDispatcher("test.jsp").forward(request, response);
                 }
                     break;
